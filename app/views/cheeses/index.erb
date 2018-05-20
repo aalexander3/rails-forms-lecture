@@ -1,0 +1,8 @@
+<h1>Cheese Wheel</h1>
+<h3>Keeping track of the world's cheeses</h3>
+
+<ul>
+  <% @cheeses.each do |cheese| %>
+    <li><a href="/cheeses/<%= cheese.id %>"><%= cheese.name %></a></li>
+  <% end %>
+</ul>
